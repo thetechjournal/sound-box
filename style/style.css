@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: #8df0f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    
+    cursor: url('../images/bluebird.png');	
+}
+
+.show-speaker {
+    cursor: url("../images/speaker.png"), auto;
+}
+
+#stop-sound {
+    background-color: white;;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    position:fixed;
+    top:0;
+    right: 0;
+    z-index:100;
+    cursor: pointer;
+}
+
+
+.title {
+    color: rgb(2, 54, 54);
+    font-size: 1.5rem;
+}
+
+.title-img {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #00342C;
+}
+
+.picture {
+    width: 100px;
+}
+
+.main-title {
+    color: rgb(2, 71, 71);
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(2, 71, 71);
+    transform: translate(-50%, -8%); 
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center ;
+  padding-top: 3em;
+  height: 90vh;
+}
+
+.sound {
+    align-items: center;
+    padding: 1em 1em;
+    background: #8EF0F2;
+    text-align: center;
+}
+
+.sound-animal {
+   
+    width: 100px;
+    border: 2px dashed #00342C;
+    align-items: center;
+    padding: 1em 1em;
+    background: #6dd5d7;
+}
+
+.sound-other {
+    border: 2px dashed #00342C;
+    grid-gap: 1rem;
+    align-items: center;
+    padding: 1em 1em;
+    margin: 1em;
+    text-align: center;
+    background: #3b9b9c;
+}
+
+.other-img {
+    width: 100px;
+}
+
+.main {
+    margin-top: 5em;
+}
+
+.forest {
+    background-image: url(../images/forest.png);
+    object-fit: cover;
+    padding-left: 2rem;
+}
+
+.noise {
+    background-image: url(../images/city.png);
+    object-fit: cover;
+    height: 100vh;
+}
+
+.meditation {
+    background-image: url(../images/landscape.jpg);
+    height: 80vh;
+}
+
+.spinup {
+    animation: spin 2s ease-in-out 1;
+   }
+   
+   @keyframes spin {
+   0% { transform: rotate(0deg); }
+   50% { transform: rotate(5deg); }
+   100% { transform: rotate(-5deg); }
+}
+
+@media (min-width: 550px) {
+.main-title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 4.5rem;
+    transform: translate(-50%, -10%);
+    border-bottom: none;
+}
+ .container {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 4em 5em;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.forest .noise .meditation {
+    object-fit: cover;
+}
+
+.title-img {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.other-img {
+    width: 200px;
+}
+
+.picture {
+    width: 200px;
+}
+
+}
+
+
