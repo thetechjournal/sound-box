@@ -13,8 +13,6 @@ body {
 
 a {
     text-decoration: none;
-    
-    cursor: url('../images/bluebird.png');	
 }
 
 .show-speaker {
@@ -104,18 +102,20 @@ a {
 
 .forest {
     background-image: url(../images/forest.png);
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     padding-left: 2rem;
 }
 
 .noise {
     background-image: url(../images/city.png);
-    object-fit: cover;
     height: 100vh;
 }
 
 .meditation {
     background-image: url(../images/landscape.jpg);
+    background-size: cover;
+    background-position: center;
     height: 80vh;
 }
 

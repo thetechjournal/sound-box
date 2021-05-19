@@ -12,7 +12,6 @@ for (const animal of animalSounds) {
 
 function playSound(e) {
     const id = e.target.id;
-    console.log('id: ', id)
     const player = new Audio(`./sounds/${id}.mp3`);
     if(current == '') {
         current = player;
@@ -24,7 +23,6 @@ function playSound(e) {
 }
 
 stopSounds.addEventListener('click', () => {
-    console.log('Stop sounds')
     if(current !== '') {
         current.pause();
     }
