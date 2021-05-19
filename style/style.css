@@ -11,6 +11,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.outer-container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
 a {
     text-decoration: none;
 }
@@ -104,7 +109,7 @@ a {
     background-image: url(../images/forest.png);
     background-size: cover;
     background-position: center;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .noise {
